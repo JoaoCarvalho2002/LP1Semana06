@@ -9,7 +9,7 @@ namespace GameSix
         private float shield;
         public Foe(string name)
         {
-            this.name = name;
+            this.name = SetName();
             health = 100;
             shield = 0;
         }
@@ -41,9 +41,10 @@ namespace GameSix
 
         public string SetName()
         {
-            Console.WriteLine("New name");
+            
             name=Console.ReadLine();
-            return this.name;
+            string trim = name.Replace( " ", "" );
+            return trim;
 
         }
     }
