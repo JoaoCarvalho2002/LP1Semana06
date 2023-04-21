@@ -2,7 +2,7 @@ using System;
 
 namespace GameSix
 {
-    public class Foe
+    class Foe
     {
         private String name;
         private float health;
@@ -39,6 +39,12 @@ namespace GameSix
             return shield ;
         }
 
-        
+        public string SetName()
+        {
+            Console.WriteLine("New name");
+            name=Console.ReadLine();
+            return this.name;
+
+        }
     }
 }
