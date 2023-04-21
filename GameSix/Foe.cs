@@ -9,10 +9,13 @@ namespace GameSix
         private float shield;
         public Foe(string name)
         {
-            this.name = SetName();
+            this.name = SetName(name);
+            Console.WriteLine("carved "+ this.name);
             health = 100;
             shield = 0;
+            
         }
+
         public string GetName()
         {
             return name ;
@@ -31,18 +34,20 @@ namespace GameSix
 
         public float GetHealth()
         {
+            Console.WriteLine("hp");
             return health;
+            
         }
 
         public float GetShield()
         {
+            Console.WriteLine("gsh");
             return shield ;
         }
 
-        public string SetName()
+        public string SetName(string name)
         {
             
-            name=Console.ReadLine();
             string trim = name.Replace( " ", "" );
             return trim;
 
