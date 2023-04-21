@@ -26,7 +26,9 @@ namespace GameSix
             
                 
             }  
-            Console.WriteLine("Merci d’utiliser ceprogramme!"); 
+
+            Console.WriteLine("Thank you for using this program!"); 
+
         }
         
     }
