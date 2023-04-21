@@ -23,13 +23,10 @@ namespace GameSix
                 instance.SetName(nameTOGO);
                 instance.GetHealth();
                 instance.GetShield();
-                
-
-                
-            }
-
-
             
+                
+            }   
         }
+        
     }
 }

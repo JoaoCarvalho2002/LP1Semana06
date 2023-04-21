@@ -10,7 +10,7 @@ namespace GameSix
         public Foe(string name)
         {
             this.name = SetName(name);
-            
+
             health = 100;
             shield = 0;
             
@@ -50,6 +50,33 @@ namespace GameSix
             
             string trim = name.Replace( " ", "" );
             return trim;
+
+        }
+        public void PickupPowerUP(int powerup,float aux)
+        {
+            if (powerup==health)
+            {
+                if (health+aux<=100){
+                    health=health+aux;
+                    
+                }else{
+                    health=100;
+                }
+
+            }
+            if (powerup==shield)
+            {
+                if (shield+aux<=100){
+                    shield=shield+aux;
+                    
+                }else{
+                    shield=100;
+                }
+                
+
+            }
+            
+            
 
         }
     }
