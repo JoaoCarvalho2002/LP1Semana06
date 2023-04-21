@@ -29,6 +29,16 @@ namespace GameSix
             }
         }
 
+        public float GetHealth()
+        {
+            return health;
+        }
 
+        public float GetShield()
+        {
+            return shield ;
+        }
+
+        
     }
 }
