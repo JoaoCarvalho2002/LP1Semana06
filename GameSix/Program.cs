@@ -25,7 +25,8 @@ namespace GameSix
                 instance.GetShield();
             
                 
-            }   
+            }  
+            Console.WriteLine("Merci d’utiliser ceprogramme!"); 
         }
         
     }
