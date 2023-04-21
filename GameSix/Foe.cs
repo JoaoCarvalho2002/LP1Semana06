@@ -10,7 +10,7 @@ namespace GameSix
         public Foe(string name)
         {
             this.name = SetName(name);
-            Console.WriteLine("carved "+ this.name);
+            
             health = 100;
             shield = 0;
             
@@ -34,14 +34,14 @@ namespace GameSix
 
         public float GetHealth()
         {
-            Console.WriteLine("hp");
+            
             return health;
             
         }
 
         public float GetShield()
         {
-            Console.WriteLine("gsh");
+            
             return shield ;
         }
 

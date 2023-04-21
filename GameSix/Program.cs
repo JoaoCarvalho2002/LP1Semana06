@@ -6,7 +6,30 @@ namespace GameSix
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            int inim;
+            Console.WriteLine("Number of enemies? ");
+            inim= int.Parse(Console.ReadLine());
+            string [] Enemyarr = new string [3];
+
+            object [] objarr = new string [inim];
+
+            
+            for(int i =0; i < Enemyarr.Length;i++){
+                
+                Console.WriteLine("Name of "+i+" foe: ");
+                string nameTOGO= Console.ReadLine();
+    
+                Foe instance = new Foe(nameTOGO);
+                instance.SetName(nameTOGO);
+                instance.GetHealth();
+                instance.GetShield();
+                
+
+                
+            }
+
+
+            
         }
     }
 }
