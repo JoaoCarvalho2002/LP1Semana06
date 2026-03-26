@@ -57,9 +57,8 @@ namespace RandomDungeon
             if (result == 0)
             {
 
-                //string nametoremove= defender.GetName();
+                RemoveEnemy(defender) ;
                 
-                this.enemies.RemoveAt(1);
             }
 
         }
