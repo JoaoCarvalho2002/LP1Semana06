@@ -67,7 +67,7 @@ namespace RandomDungeon
         public static Enemy GenerateRandomEnemy(int seed)
         {
             Random random = new Random();
-            int randomname = random.Next(0, 100);
+            int randomname = random.Next(0, 10);
             string namegiven=DefaultNames.GetValue(randomname).ToString();
             int randomNumber = random.Next(50, 100);
             int randomNumberattack = random.Next(5, 20);
