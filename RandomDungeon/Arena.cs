@@ -5,7 +5,7 @@ namespace RandomDungeon
 {
     public class Arena
     {
-        private List<Enemy> enemies;
+        public List<Enemy> enemies;
 
         public Arena(List<Enemy> enemies)
         {
