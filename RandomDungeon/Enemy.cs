@@ -64,5 +64,14 @@ namespace RandomDungeon
             // CÓDIGO AQUI
             return name+" ("+health +", "+ attack+")";
         }
+        public static Enemy GenerateRandomEnemy(int seed)
+        {
+            Random random = new Random();
+            int randomname = random.Next(0, 100);
+            string namegiven=DefaultNames.GetValue(randomname).ToString();
+            int randomNumber = random.Next(50, 100);
+            int randomNumberattack = random.Next(5, 20);
+            return new Enemy(namegiven,randomNumber,randomNumberattack);
+        }
     }
 }
